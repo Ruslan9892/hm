@@ -1,0 +1,21 @@
+public class Main {
+    public static void main(String[] args) {
+    float coat = 70;
+    byte coatDiscount = 77;
+    float hat = 25;
+    byte hatDiscount = 37;
+    float bussinessSuit = 53;
+    byte bussinessSuitDiscount = 44;
+    float shirt = 19;
+    byte shirtDiscount = 0;
+    float shoes = 41;
+    byte shoesDiscount = 32;
+
+    float account = 312;
+
+    float count = coat - (coat * coatDiscount / 100) + hat - (hat * hatDiscount / 100) + bussinessSuit - (bussinessSuit * bussinessSuitDiscount / 100) + shirt - (shirt * shirtDiscount / 100) + shoes - (shoes * shoesDiscount / 100);
+        if (count <= account) System.out.println("Хватает");
+        else System.out.println("не хватает");
+
+    }
+}
